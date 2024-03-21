@@ -8,11 +8,14 @@ function Layout() {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="layout">
+    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       {isLoading && <Loader />}
       <Header />
-      <main>
-        <Outlet />
+
+      <main className="overflow-scroll">
+        <div className="mx-auto max-w-3xl ">
+          <Outlet />
+        </div>
       </main>
       <CartOverview />
     </div>

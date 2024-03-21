@@ -13,7 +13,7 @@ function SearchOrder() {
     setQuery("");
   }
   return (
-    <form action="" onSubmit={handleSubmit}>
+    <form action="" onSubmit={handleSubmit} className="ml-auto mr-4">
       <input
         type="text"
         placeholder="Search order #"
