@@ -12,6 +12,7 @@ import Layout from "./ui/Layout";
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
